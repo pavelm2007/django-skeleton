@@ -1,0 +1,37 @@
+# Standard installation features
+Django
+South
+
+# Django Compressor requires this
+BeautifulSoup
+
+# Thumbnail generation requires this
+PIL
+
+# Text Markup
+#Markup
+#Pygments
+
+# Django layout addons
+#easy-thumbnails
+django-bootstrap-form
+django-avatar
+django-grappelli
+django-pagination
+#django-tinymce
+
+# Blog addons
+#django-blog-zinnia
+#django-tagging
+#django-threaded-messages
+
+# User control
+django-registration
+django-social-auth
+
+# Django utility packages
+django-extensions
+django-compressor
+
+# Django debugging
+django-debug-toolbar

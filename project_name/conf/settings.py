@@ -4,7 +4,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-          ('You', 'you@email.com'),
+          ('You', 'you@your.email'),
 )
 MANAGERS = ADMINS
 
@@ -15,6 +15,10 @@ DATABASES = {
                          }
              }
 
-ROOT_URLCONF = '{{ project_name }}.conf.local.urls'
+INSTALLED_APPS += (
+    'django_extensions',
+)
 
-WSGI_APPLICATION = '{{ project_name }}.wsgi.local.application'
+ROOT_URLCONF = '{{ project_name }}.conf.urls'
+
+WSGI_APPLICATION = '{{ project_name }}.wsgi.dev.application'

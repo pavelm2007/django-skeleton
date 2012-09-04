@@ -1,8 +1,7 @@
-from {{ project_name }}.settings import *
+from {{ project_name }}.conf.settings import *
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-
 
 DATABASES = {
     'default': {
@@ -13,4 +12,10 @@ DATABASES = {
     }
 }
 
-WSGI_APPLICATION = '{{ project_name }}.wsgi.dev.application'
+INSTALLED_APPS += (
+    'south',
+)
+
+ROOT_URLCONF = '{{ project_name }}.conf.production.urls'
+
+WSGI_APPLICATION = '{{ project_name }}.wsgi.production.application'

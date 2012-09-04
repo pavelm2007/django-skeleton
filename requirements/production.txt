@@ -1,0 +1,16 @@
+-r base.txt
+
+# Database communication
+MySQL-Python
+South
+
+# Optimizers
+cssmin
+jsmin
+
+# Server side
+gevent
+gunicorn
+
+# Deployment
+#Fabric

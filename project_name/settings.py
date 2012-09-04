@@ -43,7 +43,7 @@ import os
 import {{ project_name }} as project_module
 
 PROJECT_DIR = os.path.dirname(os.path.realpath(project_module.__file__))
-VAR_ROOT = os.path.join(PROJECT_DIR, 'conf', 'local')
+VAR_ROOT = os.path.join(PROJECT_DIR, 'site_media')
 
 #==============================================================================
 # Project URLS and media settings
