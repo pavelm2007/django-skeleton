@@ -2,7 +2,6 @@
 
 # Database communication
 MySQL-Python
-South
 
 # Optimizers
 cssmin
