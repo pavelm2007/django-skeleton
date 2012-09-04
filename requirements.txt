@@ -1,0 +1,5 @@
+# Applications to be installed by pip
+# Usually should run in a virtualenv
+# i.e. pip install -r requirements.txt
+
+Django
