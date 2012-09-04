@@ -34,6 +34,7 @@ INSTALLED_APPS = (
     # Project specific includes
     # '{{ project_name }}.apps.',
     # 'south',
+    'django_extensions',
 )
 
 #===============================================================================

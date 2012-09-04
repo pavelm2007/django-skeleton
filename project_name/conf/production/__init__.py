@@ -1,7 +1,12 @@
-from {{ project_name }}.conf.settings import *
+from {{ project_name }}.settings import *
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
+
+ADMINS = (
+          ('You', 'you@your.email'),
+)
+MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
