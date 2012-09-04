@@ -1,4 +1,4 @@
-from {{ project_name }}.conf.base.settings import *
+from {{ project_name }}.settings import *
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
