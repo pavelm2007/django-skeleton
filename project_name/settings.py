@@ -43,7 +43,8 @@ import os
 import {{ project_name }} as project_module
 
 PROJECT_DIR = os.path.dirname(os.path.realpath(project_module.__file__))
-VAR_ROOT = os.path.join(PROJECT_DIR, 'site_media')
+PACKAGE_DIR = os.path.dirname(PROJECT_DIR)
+ASSET_DIR = os.path.join(PACKAGE_DIR, 'site_media')
 
 #==============================================================================
 # Project URLS and media settings
@@ -58,8 +59,9 @@ LOGIN_REDIRECT_URL = '/'
 STATIC_URL = '/site_media/static/'
 MEDIA_URL = '/site_media/media/'
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'site_media', 'static')
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'site_media', 'media')
+# Do not populate these by hand.  Use manage.py collectstatic
+STATIC_ROOT = os.path.join(ASSET_DIR, 'static')
+MEDIA_ROOT = os.path.join(ASSET_DIR, 'media')
 
 STATICFILES_DIRS = (
     os.path.join(PROJECT_DIR, 'static'),
