@@ -1,12 +1,12 @@
 # Standard installation features
-Django
-South
+Django>=1.4.1
+South>=0.7.6
 
 # Django Compressor requires this
-BeautifulSoup
+BeautifulSoup>=3.2.1
 
 # Thumbnail generation requires this
-PIL
+PIL>=1.1.7
 
 # Text Markup
 #Markup
@@ -14,10 +14,10 @@ PIL
 
 # Django layout addons
 #easy-thumbnails
-django-bootstrap-form
-django-avatar
-django-grappelli
-django-pagination
+django-bootstrap-form>=2.0.5
+django-avatar>=1.0.5
+django-grappelli>=2.4.0
+django-pagination>=1.0.7
 #django-tinymce
 
 # Blog addons
@@ -26,12 +26,12 @@ django-pagination
 #django-threaded-messages
 
 # User control
-django-registration
-django-social-auth
+django-registration>=0.8
+django-social-auth>=0.7.5
 
 # Django utility packages
-django-extensions
-django-compressor
+django-extensions>=0.9
+django-compressor>=1.2
 
 # Django debugging
-django-debug-toolbar
+django-debug-toolbar>=0.9.4
