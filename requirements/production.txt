@@ -8,8 +8,8 @@ cssmin
 jsmin
 
 # Server side
-gevent>=0.13.7
-gunicorn>=0.14.6
+gevent==0.13.7
+gunicorn==0.14.6
 
 # Deployment
 #Fabric
